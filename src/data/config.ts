@@ -24,8 +24,8 @@ const config = {
     "Framer Motion",
   ],
   author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  email: "murphyiee@outlook.com",
+  site: "https://slidieee.vercel.app/",
 
   // for github stars button
   githubUsername: "naresh-khatri",
