@@ -107,7 +107,7 @@ export default ProjectsSection;            onClick={() => setSelectedItem(null)}
               onClick={(e) => e.stopPropagation()} // click outside to close
             >
               <h3 className="text-xl font-bold mb-2">{selectedItem}</h3>
-              <p>This is a test modal using Framer Motion!</p>
+              <p>This is a test mjwjjdodal using Framer Motion!</p>
             </motion.div>
           </motion.div>
         )}
