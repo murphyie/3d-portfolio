@@ -76,7 +76,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    A Full Stack Web Developer
+                    A Full Time Editor ^
                   </p>
                 </BlurIn>
               </div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
                   <BoxReveal delay={2} width="100%" >
                     <Button className="flex items-center gap-2 w-full">
                       <File size={24} />
-                      <p>BOOM</p>
+                      <p>Resume</p>
                     </Button>
                   </BoxReveal>
                 </Link>
