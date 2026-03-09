@@ -269,7 +269,7 @@ export const EXPERIENCE: Experience[] = [
       // "Shipped high-impact features end-to-end from requirements to production.",
     ],
     skills: [
-      SkillNames.NEXTJS,
+      "",
 
     ],
   },
