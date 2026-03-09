@@ -1,30 +1,34 @@
 const config = {
   title: "Spidy Spy | Editor",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Explore the portfolio of a passionate programmer who turns ideas into powerful digital solutions. From clean, efficient code to innovative software projects, discover my latest work, technical experiments, and creative builds. Let’s collaborate and create something exceptional together! 🚀💻Explore the portfolio of SpidySpy, a creative editor who transforms raw footage into captivating stories. From cinematic edits to dynamic visual effects, discover my latest projects, creative experiments, and storytelling through video. Let’s craft something visually amazing together! 🎬✨",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Discover the portfolio of SpidySpy, a professional editor with experience and innovative projects.",
   },
   keywords: [
-    "Naresh",
+    "SpidySpy",
     "portfolio",
     "full-stack developer",
     "creative technologist",
     "web development",
     "3D animations",
     "interactive websites",
-    "Coding Ducks",
+    "Adobe",
     "The Booking Desk",
     "Ghostchat",
     "web design",
-    "GSAP",
+    "Adobe Primere Pro",
     "React",
     "Next.js",
     "Spline",
     "Framer Motion",
+    "Adobe After Effects",
+    "After Effects",
+    "Photoshop",
+    "Capcut",
   ],
   author: "Spidy Spy",
-  email: "naresh.khatri2345@gmail.com",
+  email: "sarfrajkhangamer1234@gmail.com",
   site: "https://nareshkhatri.site",
 
   // for github stars button
@@ -35,11 +39,11 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    twitter: "https://x.com/spidyspy",
+    linkedin: "https://www.linkedin.com/in/spidyspy",
+    instagram: "https://www.instagram.com/sakuna8427",
+    facebook: "https://www.facebook.com/spidyspy/",
+    github: "https://github.com/spidyspy",
   },
 };
 export { config };
