@@ -60,7 +60,6 @@ const ProjectsLinks = ({ live, repo }: { live: string; repo?: string }) => {
     </div>
   );
 };
-};
 export type Project = {
 };
 const projects: Project[] = [
