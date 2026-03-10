@@ -3,7 +3,7 @@
 import { useInView } from "framer-motion";
 import React, { useRef } from "react";
 import { Button } from "../ui/button";
-import { SiGithub, SiInstagram, SiLinkerd, SiX } from "react-icons/si";
+import { SiGithub, SiInstagram, SiLinkerd, SiX, SiDiscord } from "react-icons/si";
 import { config } from "@/data/config";
 import Link from "next/link";
 
@@ -14,9 +14,9 @@ const BUTTONS = [
     icon: <SiGithub size={"24"} color={"#fff"} />,
   },
   {
-    name: "LinkedIn",
-    href: config.social.linkedin,
-    icon: <SiLinkerd size={"24"} color={"#fff"} />,
+    name: "Discord",
+    href: config.social.discord,
+    icon: <SiDiscord size={"24"} color={"#fff"} />,
   },
   {
     name: "Twitter",
