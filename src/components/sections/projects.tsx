@@ -22,9 +22,9 @@ const ProjectsSection = () => {
         {projects.map((project) => (
           <motion.div
             key={project.title}
-            className="relative rounded-lg overflow-hidden cursor-pointer"
-            whileHover={{ scale: 1.06 }}
-            transition={{ duration: 0.35 }}
+            className="group relative rounded-lg overflow-hidden cursor-pointer shadow-lg"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
             onClick={() => setSelectedMedia(project)}
           >
             {/* Media Container */}
@@ -35,35 +35,31 @@ const ProjectsSection = () => {
                   src={project.src}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-500 hover:scale-110"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               ) : (
                 <video
                   src={project.src}
+                  autoPlay
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                   className="w-full h-full object-cover"
                 />
               )}
 
-              {/* Overlay */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="absolute inset-0 bg-black/60 flex items-end"
-              >
-                <div className="p-4 text-white text-lg font-medium">
-                  {project.title}
-                </div>
-              </motion.div>
+              {/* Title Overlay */}
+              <div className="absolute bottom-0 left-0 w-full bg-black/60 text-white p-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+                {project.title}
+              </div>
+
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* Modal */}
+      {/* Fullscreen Modal */}
       <AnimatePresence>
         {selectedMedia && (
           <motion.div
@@ -77,7 +73,7 @@ const ProjectsSection = () => {
               initial={{ scale: 0.7, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.7, opacity: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.35 }}
               className="max-w-[90vw] max-h-[90vh]"
               onClick={(e) => e.stopPropagation()}
             >
@@ -101,6 +97,7 @@ const ProjectsSection = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
     </SectionWrapper>
   );
 };
